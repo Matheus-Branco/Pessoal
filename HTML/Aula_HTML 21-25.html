@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_HTML 21-25</title>
+</head>
+    <style>
+        .s_cursos{
+            display: flex;
+        }
+        .curso{
+            border: 1px solid #000;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: #eee;
+            margin: 5px;
+        }
+        dialog{
+            padding: 0;
+            border: 0;
+            border-radius: 7px;
+            box-shadow: 0 0 70px black;
+            flex-direction: column;
+        }
+        dialog::backdrop{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .dialog-titulo{
+            background-color: #eee;
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+            padding: 7px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #aaa;
+            height: 40px;
+        }
+        .dialog-corpo{
+            background-color: #fff;
+            padding: 7px;
+        }
+        .dialog-rodape{
+            background-color: #fff;
+            border-bottom-left-radius: inherit;
+            border-bottom-right-radius: inherit;
+            padding: 7px;
+            border-top: 1px solid #aaa;
+        }
+        #btn-fechar{
+            border:none;
+            border-radius: 7px;
+            padding: 7px;
+            cursor: pointer;
+            outline: none;
+        }
+        #btn-fechar:hover{
+            background-color: #eee;
+        }
+        body{
+            margin: 0px;
+        }
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+        }
+        .main{
+            border: 1px dotted #f00;
+            margin: auto;
+            width: 960px;
+        }
+        #cabecalho, #corpo, #rodape{
+            border: 1px dotted #aaa;
+        }
+        #cabecalho{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100px;
+        }
+        #corpo{
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            width: 100%;
+            height: 670px;
+        }
+        #caixa1,#caixa2,#caixa3{
+            width: 150px;
+            height: 70px;
+        }
+        #caixa1{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: #f00;
+            color: #fff;
+            border: 1px solid #000;
+        }
+        #caixa2{
+            position: relative;
+            top: 0px;
+            left: 0px;
+            background-color: #0f0;
+            color: #fff;
+            border: 1px solid #000;
+        }
+        #caixa3{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background-color: #00f;
+            color: #fff;
+            border: 1px solid #000;
+            z-index: 2;
+        }
+        #rodape{
+            position: absolute;
+            top: 670px;
+            left: 0px;
+            width: 100%;
+            height: 100px;
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+    <script>
+        // function abrirDialog(){
+        //     document.getElementById("d1").setAttribute("open","");
+        // }
+        // function fecharDialog(){
+        //     document.getElementById("d1").removeAttribute("open");
+        // }
+//             function fecharDialog(){
+//                 document.getElementById("btn_dialog").innerHTML="Abrir";
+//                 document.getElementById("d1").removeAttribute("open");
+//             }
+//             function abrirDialog() {
+//                 document.getElementById("btn_dialog").innerHTML="Fechar";
+//                 document.getElementById("d1").setAttribute("open","");
+//             }
+//             function controlaDialog(titulo,msg){
+//                 document.getElementById("d1");
+//                 if(document.getElementById("d1").open){
+//                     fecharDialog();
+//                 }else{
+//                     abrirDialog()
+//                     document.getElementById("titulo").innetHTML=titulo;
+//                     document.getElementById("msg1").innetHTML=titulo;
+//                 }
+//             }
+//     </script>
+ <body>
+
+     <!--Aula 21-->
+
+<!-- //     <p><dfn title="Formação para páginas web">HTML</dfn> Hypertext Markup Language é uma linguagem de marcação utilizado na construção de páginas na Web.</p>
+
+//     <p><dfn> <abbr title="Linguagem de marcação para web">CSS</dfn> Cascading Style Sheets recurso para adicionar estilos/formatações a um documento Web.</p> -->
+    
+    <br><br><br><br>
+    <!--Aula 22-->
+        <!--<button onclick="abrirDialog()">Abrir</button>
+//         <button onclick="fecharDialog()">Fechar</button>
+//         <dialog id="d1" open>
+//             <p><dfn title="Formação para páginas web">HTML</dfn> Hypertext Markup Language é uma linguagem de marcação utilizado na construção de páginas na Web.</p>
+
+//             <p><dfn> <abbr title="Linguagem de marcação para web">CSS</dfn> Cascading Style Sheets recurso para adicionar estilos/formatações a um documento Web.</p>
+//         </dialog>-->
+
+     <br><br><br><br>
+     <!--Aula 23-->
+    <br><br><br><br>
+<!-- //         <article>
+//             <div>
+//                 <h1>CFB Cursos</h1>
+//                 <p>O CFB Cursos é um canal de cursos de informática, voltando
+//                     para cursos de desenvolvimento web e/ou desktop.
+//                 </p>
+//             </div>
+//             <div class="s_cursos">
+//             <div class="curso">
+//                 <h2>HTML</h2>
+//                 <p>
+//                     Existem três playlist de HTML atualmente no canal, HTML, HTML5 e HTML Completo e profissional
+//                 </p>
+//                 <a href="#">Confira</a>
+//             </div>
+
+//             <div class="curso">
+//                 <h3>C++ / QtCreator</h3>
+//                 <p>
+//                     Embora sejam suas playlists separadas os estes cursos formam uma dupla, você primeiro aprende programa
+//                     na linguagem C++ e depois aprender curar programa no padrão Windows com o framework QtCreator
+//                 </p>
+//                 <a href="#">Confira</a>
+//             </div>
+//             <div class="curso">
+//             <h3>Arduino</h3>
+//             <p>
+//                 Neste curso você vai aprender a cotrolar dispositivos de hardware como sensores e motores. para criar robôs
+//                 ou automatizar tarefas, tudo programado com uma linguagem derivada do C++
+//             </p>
+//             <a href="#">Confira</a>
+//             </div>
+//             </div>
+//         </article> -->
+
+    <br><br><br><br>
+    <!--Aula 24-->
+
+<!-- //         <button onclick="controlaDialog('Curso de HTML','Curso de HTML completo de profissional do canal CFBC')" id="btn_dialog">Abrir</button>
+
+//         <button onclick="controlaDialog('Teste','Teste')" id="btn_dialog">Abrir2</button>
+
+//         <dialog id="d1">
+//             <div class="dialog-titulo">
+//                 <h3 id="titulo"></h3>
+//             </div>
+//             <div class="dialog-corpo">
+//                 <p>Caixa de diálogo nativa do HTML5</p>
+//                 <p id="msg1">CFBC / Curso de HTML Completo e Profissional</p>
+//             </div>
+//             <div class="dialog-rodape">
+//                 <button id="btn-fechar" onclick="fecharDialog()">Fechar</button>
+//             </div>
+//         </dialog> -->
+
+    <br><br><br><br>
+    <!--Aula 25-->
+
+            <div id="cabecalho">
+                <div class="main">
+                    <h1>CFB Cursos</h1>
+            </div>
+
+            <div id="corpo">
+                <div>
+                    <div id="caixa1">
+                    <h3>Caixa1</h3>
+            </div>
+
+            <div id="corpo">
+                <div>
+                    <div id="caixa2">
+                    <h3>Caixa2</h3>
+           </div>
+
+           <div id="corpo">
+                <div>
+                    <div id="caixa3">
+                    <h3>Caixa3</h3>
+                    </div>
+                    </div>
+            </div>
+            <p>Nesta aula vamos aprender a manipular divs, usando position, top, left, width, height.</p>
+            <p>Se ainda não for inscrito em nosso canal, se inscreva e clique no sininho</p>
+            <p>Siga-nos na nossas redes sociais, endereços na descrição do vídeo</p>
+        </div>
+    </div>
+            <div id="rodape">
+                <div class="main">
+                    <p>www.youtube.com/cfbcursos</p>
+                    <p><cfbcursos class="com"></cfbcursos></p>
+                </div>
+            </div>
+        
+</body>
+</html>
