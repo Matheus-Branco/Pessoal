@@ -1,0 +1,202 @@
+<!--Aula 31-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_HTML 31-35</title>
+</head>
+    <style>
+        input{
+            display: block;
+        }
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }
+    </style>
+<body>
+    
+    <form name="f_cadastro" action="" method="">
+        <label>Nome</label>
+        <input type="text" name="f_nome">
+    </form>
+
+<br><br><br><br>
+</body>
+</html>
+
+<!--Aula 32-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_HTML 31-35</title>
+</head>
+    <style>
+        input{
+            display: block;
+        }
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }
+        #dv_btns{
+            display: flex;
+        }
+    </style>
+<body>
+    
+    <form name="f_cadastro" action="#" method="post">
+        <label>Nome</label>
+        <input type="text" name="f_nome">
+        <div id="dv_btns">    
+            <input type="submit" name="f_btns_enviar" value="Gravar">
+            <input type="reset" name="f_btns_limpar" value="Limpar">
+            <input type="button" name="f_btns_nada" value="Nada">
+        </div>
+    </form>
+
+<br><br><br><br>
+</body>
+</html>
+
+<!--Aula 33-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_HTML 31-35</title>
+</head>
+    <style>
+        .quebra{
+            display: block;
+        }
+        .n_quebra{
+            display: inline;
+        }
+        .espaço{
+            margin-bottom: 15px;
+        }
+        .espaço_t{
+            margin-top: 15px;
+        }
+        form{
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eee;
+        }
+    </style>
+    <body>
+
+    <form name="f_cadastro" action="#" method="get">
+        <label>Username:</label>
+        <input class="espaço quebra" type="text" name="f_username" maxlength="20" size="25"> 
+        <label>Senha:</label>
+        <input class="espaço quebra" type="password" name="f_senha" maxlength="10" size="15">
+        <label class="quebra">Esportes favoritos:</label>
+        <input class="n_quebra" type="checkbox" name="f_fut" checked>Futebol
+        <input class="n_quebra" type="checkbox" name="f_bas">Basquete
+        <input class="n_quebra" type="checkbox" name="f_nat">Natação
+        <label class="quebra espaço_t">Possui carro?</label>
+        <input class="n_quebra" type="radio" name="f_carro" value="S" checked>Sim
+        <input class="n_quebra" type="radio" name="f_carro" value="N">Não
+        <input class="espaço_t quebra" type="submit" name="f_Entrar" value="Entrar">
+    </form>
+
+<br><br><br><br>
+</body>
+</html>
+
+<!--Aula 34-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_HTML 31-35</title>
+</head>
+    <style>
+        .quebra{
+            display: block;
+        }
+        .n_quebra{
+            display: inline;
+        }
+        .espaço{
+            margin-bottom: 15px;
+        }
+        .espaço_t{
+            margin-top: 15px;
+        }
+        form{
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eee;
+        }
+    </style>
+<body>
+
+    <form name="f_cadastro" action="#" method="get">
+        <label class="quebra">Hora:</label>
+        <input type="time" name="f_hora" min="09:00" max="18:00">
+
+        <label class="quebra espaço_t">Data:</label>
+        <input type="date" name="f_date" min="2023-06-03" max="2023-06-08">
+
+        <label class="quebra espaço_t">Data e Hora:</label>
+        <input type="datetime-local" name="f_date_hora" required>
+
+        <input class="espaço_t quebra" type="submit" name="f_Entrar" value="Entrar">
+    </form>
+
+<br><br><br><br>
+</body>
+</html>
+
+<!--Aula 35-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_HTML 31-35</title>
+</head>
+    <style>
+        .quebra{
+            display: block;
+        }
+        .n_quebra{
+            display: inline;
+        }
+        .espaço{
+            margin-bottom: 15px;
+        }
+        .espaço_t{
+            margin-top: 15px;
+        }
+        form{
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eee;
+        }
+    </style>
+<body>
+
+    <form name="f_cadastro" action="#" method="get">
+        <label class="quebra">Mês:</label>
+        <input type="month" name="f_mes">
+
+        <label class="quebra espaço_t">Semana:</label>
+        <input type="week" name="f_semana">
+
+        <input type="hidden" name="canal" value="cfbcursos">
+        <input type="hidden" name="curso" value="html5">
+
+
+        <input class="espaço_t quebra" type="submit" name="f_Entrar" value="Entrar">
+    </form>
+
+<br><br><br><br>    
+</body>
+</html>
+
