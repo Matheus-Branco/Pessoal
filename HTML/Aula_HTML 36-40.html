@@ -1,0 +1,247 @@
+<!--Aula 36-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_HTML 36-40</title>
+</head>
+    <style>
+        .quebra{
+            display: block;
+        }
+        .n_quebra{
+            display: inline;
+        }
+        .espaço{
+            margin-bottom: 15px;
+        }
+        .espaço_t{
+            margin-top: 15px;
+        }
+        form{
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eee;
+        }
+    </style>
+    <script>
+
+    </script>
+<body>
+    
+    <form name="f_cadastro" action="#" method="get">
+        <label class="quebra">Escolha uma cor::</label>
+        <input type="color" name="f_cor">
+
+        <label class="quebra espaço_t">Digite seu e-mail:</label>
+        <input type="email" name="f_email">
+
+        <input class="quebra espaço_t" src="C:\Users\User\Downloads\Logo cfbc.png" type="image" name="f_image">
+
+        <input class="espaço_t quebra" type="submit" name="f_Entrar" value="Entrar">
+    </form>
+
+<br><br><br><br>
+</body>
+</html>
+
+<!--Aula 37-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_HTML 36-40</title>
+</head>
+    <style>
+        .quebra{
+            display: block;
+        }
+        .n_quebra{
+            display: inline;
+        }
+        .espaço{
+            margin-bottom: 15px;
+        }
+        .espaço_t{
+            margin-top: 15px;
+        }
+        form{
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eee;
+        }
+    </style>
+    <script>
+
+    </script>
+<body>
+    
+    <form name="f_cadastro" action="#" method="get">
+
+        <label class="quebra espaço_t">Senha:</label>
+        <input type="password" name="f_senha" pattern="[a-zA-Z0-9]{8}">
+
+        <label class="quebra">Telefone:</label>
+        <input type="tel" name="f_tel" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx) 9xxxx-xxxx">
+
+        <label class="quebra espaço_t">Escolha um número:</label>
+        <input type="number" name="f_num" step="5" min="0">
+
+        <label class="quebra espaço_t">Pesquise:</label>
+        <input type="search" name="f_search">
+
+        <input class="espaço_t quebra" type="submit" name="f_Entrar" value="Enviar">
+    </form>
+
+<br><br><br><br>
+</body>
+</html>
+
+<!--Aula 38-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_HTML 36-40</title>
+</head>
+    <style>
+        .quebra{
+            display: block;
+        }
+        .n_quebra{
+            display: inline;
+        }
+        .espaço{
+            margin-bottom: 15px;
+        }
+        .espaço_t{
+            margin-top: 15px;
+        }
+        form{
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eee;
+        }
+    </style>
+    <script>
+
+    </script>
+<body>
+    
+    <form name="f_cadastro" action="#" method="get" enctype="multipart/form-data">
+
+        <label class="quebra espaço_t">Selecione o arquivo:</label>
+        <input type="file" name="f_arquivo" accept=".jpg,.gif,.png" multiple>
+
+        <label class="quebra espaço_t">Digite o url:</label>
+        <input type="url" name="f_url"> <!--placeholder="https://cfbcursos.com.br" pattern="https://."-->
+
+        <input class="espaço_t quebra" type="submit" name="f_Entrar" value="Enviar">
+    </form>
+
+<br><br><br><br>
+</body>
+</html>
+
+<!--Aula 39-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_HTML 36-40</title>
+</head>
+    <style>
+        .quebra{
+            display: block;
+        }
+        .n_quebra{
+            display: inline;
+        }
+        .espaço{
+            margin-bottom: 15px;
+        }
+        .espaço_t{
+            margin-top: 15px;
+        }
+        form{
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eee;
+        }
+    </style>
+    <script>
+
+    </script>
+<body>
+    
+    <form name="f_cadastro" action="#" method="get">
+
+        <select name="f_gen"> <!--multiple, size-->
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+
+        <input class="espaço_t quebra" type="submit" name="f_Entrar" value="Enviar">
+    </form>
+
+<br><br><br><br>
+</body>
+</html>
+
+<!--Aula 40-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_HTML 36-40</title>
+</head>
+    <style>
+        .quebra{
+            display: block;
+        }
+        .n_quebra{
+            display: inline;
+        }
+        .espaço{
+            margin-bottom: 15px;
+        }
+        .espaço_t{
+            margin-top: 15px;
+        }
+        form{
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eee;
+        }
+    </style>
+    <script>
+
+    </script>
+<body>
+    
+    <form name="f_cadastro" action="#" method="get" enctype="multipart/form-data">
+
+        <input list="f_transportes" name="f_cor">
+        <datalist id="f_cores">
+            <option value="blue">Azul</option>
+            <option value="black">Preto</option>
+            <option value="white">Branco</option>
+            <option value="yellow">Amarelo</option>
+            <option value="green">Verde</option>
+            <option value="beige">Bege</option>
+        </datalist>
+
+        <datalist id="f_transportes">
+            <option value="car">Carro</option>
+            <option value="airplane">Avião</option>
+            <option value="ship">Navio</option>
+            <option value="motorcycle">Motocicleta</option>
+            <option value="bicycle">Bicicleta</option>
+        </datalist>
+
+        <input class="espaço_t quebra" type="submit" name="f_Entrar" value="Enviar">
+    </form>
+
+<br><br><br><br>
+</body>
+</html>
