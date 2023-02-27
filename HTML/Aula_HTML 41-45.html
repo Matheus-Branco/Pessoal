@@ -1,0 +1,189 @@
+    
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_HTML 41-45</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Raleway:wght@100&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<!--Aula 41-->
+<style>
+        .quebra{
+            display: block;
+        }
+        .n_quebra{
+            display: inline;
+        }
+        .espaço{
+            margin-bottom: 15px;
+        }
+        .espaço_t{
+            margin-top: 15px;
+        }
+        form{
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eee;
+        }
+</style>
+<body>
+    
+    <form name="f_cadastro" action="#" method="get">
+        
+        <fieldset>
+            <legend>Dados 1:</legend>
+            <label for="f_nome">Nome:</label>
+            <input type="text" name="f_nome" id="f_nome" class="quebra">
+            <br>
+
+            <label for="f_telefone">Telefone:</label>
+            <input type="tel" name="f_tel" id="f_nome" class="quebra">
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+
+            <legend>Dados 2:</legend>
+            <label for="f_carro">Possui carro?</label>
+            <input type="radio" name="f_carro" id="f_carro" value="s" checked>Sim<br>
+            <input type="radio" name="f_carro" id="f_carro" value="n" checked>Não
+            <br>
+
+            <label for="f_nome">Possui casa própria?</label>
+            <input type="radio" name="f_casa" id="f_casa" value="s" checked>Sim<br>
+            <input type="radio" name="f_casa" id="f_casa" value="n" checked>Não
+            <br>
+        </fieldset>
+
+        <input class="espaço_t quebra" type="submit" name="f_enviar" value="Enviar">
+
+    </form>
+
+    <br><br><br><br>
+</body>
+<!--Aula 42-->
+<style>
+        .quebra{
+            display: block;
+        }
+        .n_quebra{
+            display: inline;
+        }
+        .espaço{
+            margin-bottom: 15px;
+        }
+        .espaço_t{
+            margin-top: 15px;
+        }
+        form{
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eee;
+        }
+</style>
+<body>
+    
+    <form name="f_cadastro" action="#" method="get">
+
+        <textarea name="f_comentário" cols="50" rows="10" autofocus>
+            CFB Cursos
+        </textarea>
+        <br>
+        
+        <input class="espaço_t quebra" type="submit" name="f_enviar" value="Enviar">
+    </form>
+
+    <br><br><br><br>
+</body>
+<!--Aula 43-->
+<style>   
+    .título{
+        color: #00f;
+        font-size: 30pt;
+    }
+    h2{
+        color: #0f0;
+    }
+</style>
+<body>
+    
+    <h1 class="título">CFB Cursos</h1>
+    <h2>Cursos de informática avançada</h2>
+    <p>Em nosso canal você encvontra várias playlists com cursos totalmente gratuitos de
+    informática avançada e tecnologia de desenvolvimento.</p>
+
+    <h2>Cursos</h2>
+    <ul>
+        <li>HTML</li>
+        <li>HTML5</li>
+        <li>HTML Completo e Profissional</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>E muito mais...</li>
+    </ul>
+
+    <h2 class="título">Contato</h2>
+
+    <br><br><br><br>
+</body>
+<!--Aula 44-->
+<style>
+    .título{
+        color: #00f;
+        font-size: 30pt;
+        font-family: 'Oswald', sans-serif;;
+    }
+    h2{
+        color: #0f0;
+        font-family: 'Raleway', sans-serif;
+    }
+    p,li,a{
+        font-family: 'Shantell Sans', cursive;
+    }
+</style>
+<body>
+    
+    <h1 class="título">CFB Cursos</h1>
+    <a href="http://www.youtube.com/cfbcursos" target="_blank">Acesse o canal e se inscreva</a>
+    <h2>Cursos de informática avançada</h2>
+    <p>Em nosso canal você encvontra várias playlists com cursos totalmente gratuitos de
+    informática avançada e tecnologia de desenvolvimento.</p>
+
+    <h2>Cursos</h2>
+    <ul>
+        <li>HTML</li>
+        <li>HTML5</li>
+        <li>HTML Completo e Profissional</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>E muito mais...</li>
+    </ul>
+
+    <h2 class="título">Contato</h2>
+
+    <br><br><br><br>
+</body>
+<!--Aula 45-->
+<head>
+    <title>CFB Cursos - Curso de HTML5 </title>
+    <base href="http://www.youtube.com/cfbcursos">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet alternate" href="destques.css" title="destaques">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="CFB Cursos">
+</head>
+<style>
+    
+</style>
+<body>
+    
+    <h1>CFB Cursos</h1>
+    <p>Aula sobre tag "head" e por isso não aparece nada visualmente</p>
+
+    <br><br><br><br>
+</body>
+</html>
