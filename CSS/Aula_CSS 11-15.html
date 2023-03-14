@@ -1,0 +1,255 @@
+<!--Aula 11-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_CSS 11-15</title>
+    <style>
+        .p1{
+            border: 60px solid;
+            border-image: url('C:\\\\\\\\Users\\\\\\\\User\\\\\\\\Downloads\\\\\\\\pngtree-line-round-simple-border-png-image_2440331-removebg-preview.png') 60 stretch;
+        }
+    </style>
+</head>
+<body>
+    
+    <p class="p1">
+        CFBC - Curso de CSS
+    </p>
+
+    <br><br><br><br>
+</body>
+</html>
+
+<!--Aula 12-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_CSS 11-15</title>
+    <style>
+        .div{
+            width: 100px;
+            height: 100px;
+            border: #000 solid 1px;
+            display: inline-table;
+            color: #000;
+        }
+        .cor1{
+            background: rgb(255, 255, 255);
+        }
+        .cor2{
+            background: rgb(0, 0, 0);
+        }
+        .cor3{
+            background: rgb(255, 0, 0);
+        }
+        .cor4{
+            background: rgb(0, 255, 0);
+        }
+        .cor5{
+            background: rgb(0, 0, 255);
+        }
+        .cor6{
+            background: rgb(0, 255, 255);
+        }
+        .cor7{
+            background: rgb(255, 0, 255);
+        }
+        .cor8{
+            background: rgb(255, 255, 0);
+        }
+        .cor9{
+            background: rgb(255, 128, 0);
+        }
+        .cor10{
+            background: rgb(128, 0, 255);
+        }
+        .cor11{
+            background: rgb(128, 128, 128);
+        }
+        .cor12{
+            background: rgb(128, 64, 0);
+        }
+        #div{
+        width:100px;
+        height:100px;
+        border:#000 solid 1px;
+        display:inline-table;
+        color:#000;
+        position:absolute;
+        top:0px;
+        left:60px;
+        background-color:rgba(0,0,255,0.5);
+}
+    </style>
+</head>
+    <body>
+        
+        <div class="div cor1"></div>
+        <div class="div cor2"></div>
+        <div class="div cor3"></div>
+        <div class="div cor4"></div>
+        <br>
+        <div class="div cor5"></div>
+        <div class="div cor6"></div>
+        <div class="div cor7"></div>
+        <div class="div cor8"></div>
+        <br>
+        <div class="div cor9"></div>
+        <div class="div cor10"></div>
+        <div class="div cor11"></div>
+        <div class="div cor12"></div>
+        <div id="div"></div>
+
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 13-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_CSS 11-15</title>
+    <style> /*margin: topo direita inferior esquerda*/
+        .body{
+            margin: 0px;
+        }
+        .div1{
+            margin: 60px 30px 20px 10px;
+            border: #000 solid 1px;
+            display: inline-block;
+        }
+        .div2{
+            width: 300px;
+            margin: auto;
+            border: #000 solid 1px;
+        }
+        .div3{
+            width: 100px;
+            margin: auto;
+            border: #000 solid 1px;
+        }
+        .p{
+            text-align: center;
+            border: #000 solid 1px;
+        }
+        img{
+            width: 100px;
+        }
+        .body{
+            width: 960px;
+            margin: auto;
+            border: #000 solid 1px;
+        }
+    </style>
+</head>
+    <body class="body">
+        
+        <div class="div2">Caixa 1</div>
+        <div class="div2">Caixa 2</div>
+
+        <div class="div2">
+            <p class="p">CFBC</p>
+        </div>
+        <div class="div3">
+            <img src="C:\Users\User\Downloads\codigo.png">
+        </div>
+        
+
+        <p class="p">Curso de CSS</p>
+
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 14-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_CSS 11-15</title>
+    <style>
+        .body1{
+            margin: 0px;
+        }
+        .p1{
+            border:#000 solid 1px;
+            padding:20px;
+            margin:0px;
+            text-align:center;
+        }
+    </style>
+</head>
+    <body class="body1">
+        
+        <div>
+            <p class="p1">Canal Fessor Bruno</p>
+            <p class="p1">Curso de CSS</p>
+        </div>
+
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 15-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_CSS 11-15</title>
+    <style>
+        .div4{
+            width:200px;
+            height:100px;
+            border:#000 solid 1px;
+            display:inline-table;
+            color:#000;
+            font-size:60px;
+        }
+        #gr1{
+        background: linear-gradient(to bottom, #F00, #FF0);
+        }
+        #gr2{
+        background: linear-gradient(45deg, #F00, #00F, #FF0);
+        }
+        #gr3{
+        background: linear-gradient(to bottom, #F00 0%, #00F 25%, #FF0 50%);
+        }
+        #gr4{
+        background: linear-gradient(to right, #F00, #FF0);
+        }
+        #gr5{
+        background: radial-gradient(#F00, #FF0);
+        }
+        #gr6{
+        background: radial-gradient(#F00, #00F, #FF0);
+        }
+        #gr7{
+        background: radial-gradient(#F00 0%, #00F 25%, #FF0 50%);
+        }
+        #gr8{
+        background: radial-gradient(circle, #F00, #FF0);
+        }
+        #gr9{
+        background: repeating-linear-gradient(#F00, #FF0 20%);
+        }
+        #gr10{
+        background: repeating-radial-gradient(#F00, #FF0 20%);
+        }
+    </style>
+</head>
+    <body>
+        
+        <div id="gr1" class="div4">1</div>
+        <div id="gr2" class="div4">2</div>
+        <div id="gr3" class="div4">3</div>
+        <div id="gr4" class="div4">4</div>
+        <br><br>
+        <div id="gr5" class="div4">5</div>
+        <div id="gr6" class="div4">6</div>
+        <div id="gr7" class="div4">7</div>
+        <div id="gr8" class="div4">8</div>
+        <br><br>
+        <div id="gr9" class="div4">9</div>
+        <div id="gr10" class="div4">10</div>
+
+        <br><br><br><br>
+    </body>
+</html>

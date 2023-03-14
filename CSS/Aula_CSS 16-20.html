@@ -1,0 +1,215 @@
+<!--Aula 16-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_CSS 16-20</title>
+    <style>
+        .h1{
+            font-size: 50px;
+            color: #00f;
+            text-shadow:0px 0px 5px #00f, 0px 0px 15px #0ff;
+        }
+        .div{
+            width: 600px;
+            height: 200px;
+            background-color: #fff;
+            border: #000 solid 1px;
+            box-shadow: 10px 10px 20px #000;
+        }
+    </style>
+</head>
+    <body>
+
+        <div class="div"><h1 class="h1">Matheus Jeremias Branco</h1></div>
+
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 17-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_CSS 16-20</title>
+    <style>
+        .div0{
+            width: 600px; /*Largura*/
+            height: 200px; /*Altura*/
+            background-color: #fff; /*Cor de fundo*/
+            border: #000 solid 1px; /*Bordas*/
+            box-shadow: 10px 10px 20px #000;/*Sombra*/
+        }
+        #div0{
+            width:100%;
+            max-width:500px;
+            min-width:200px;
+            border:#000 solid 1px;
+        }
+        #dv1{
+        color:#0000ff;
+        text-align: center;
+        }
+        #p1{
+        text-transform:uppercase; /* Converte em maiúsculo */
+        }
+        #p2{
+        text-transform:lowercase; /* Converte em minúsculo */
+        }
+        #p3{
+        text-transform:capitalize; /* Converte as primeiras letras em maiúsculo */
+        }
+        #p4{
+        letter-spacing: 1px;
+        line-height: 2;
+        direction: rtl;
+        }
+        #p5{
+        letter-spacing: 2px;
+        direction: ltr;
+        }
+        #p6{
+        word-spacing: 20px;
+        }
+        #p7{
+        white-space: nowrap;
+        }
+        #p8{
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000000;
+            overflow: hidden;
+        }
+        #p9{
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000;
+        }
+        #p10{
+            width:200px;
+            height:80px;
+            border:1px solid #000000;
+            word-wrap: break-all;
+        }
+        #p11{
+        text-align:justify;
+        text-align-last:center;
+        }
+        a{
+        text-decoration:none;
+        }
+    </style>
+</head>
+    <body>
+        
+        <div id="div0">Matheus Jeremias Branco</div>
+
+        <div id="dv1">www.cfbcursos.com.br</div>
+        <p id="p1">canal fessor bruno</p>
+        <p id="p2">CURSO DE CSS</p>
+        <p id="p3">matheus jeremias branco</p>
+
+        <a href="http://www.google.com.br">Google</a>
+        <br>
+        <a href="http://www.cfbcursos.com.br">Canal Fessor Bruno</a>
+
+        <p id="p4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore 
+            magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea 
+            commodo consequat.</p>
+        <p id="p5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat.</p>
+
+        <p id="p6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <br>
+        <p id="p7">Lorem ipsum dolor sit amet, consectetur adipiscing 
+            elit, sed do eiusmod tempor incididunt ut labore et dolore 
+            magna aliqua.</p>
+        <p id="p8">Lorem ipsum dolor sit amet, consectetur adipiscing 
+            elit, sed do eiusmod tempor incididunt ut labore et dolore 
+            magna aliqua.</p>
+        <p id="p9">Lorem ipsum dolor sit amet, consectetur adipiscing 
+            elit, sed do eiusmod tempor incididunt ut labore et dolore 
+            magna aliqua.</p>    
+        <p id="p10">inconstitucionalissimamente</p> 
+        <p id="p11">Lorem ipsum dolor sit amet, consectetur adipiscing 
+            elit, sed do eiusmod tempor incididunt ut labore et dolore 
+            magna aliqua.</p>    
+
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 18-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_CSS 16-20</title>
+    <style>
+        #p12{
+        font-family:Arial, "Times New Roman", sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        font-variant: small-caps;
+        }
+    </style>
+</head>
+    <body>
+        
+        <p id="p12">Canal Fessor Bruno</p>
+
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 19-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_CSS 16-20</title>
+    <style>
+        .a{
+        text-decoration:none;
+        font-size:20px;
+        color:#FFF;
+        background-color:#800;
+        padding: 15px 15px 15px 15px;
+        display:inline-block;
+        }
+        a:hover{
+        background-color:#F00;
+        }
+    </style>
+</head>
+    <body>
+        
+        <a class="a" href="http://www.cfbcursos.com.br" target="_blank">Canal Fessor Bruno</a>
+
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 20/21-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_CSS 16-20</title>
+    <style>
+        #dv1{
+        width:100px;
+        height:100px;
+        border:#000 solid 1px;
+        transform: rotate(10deg);
+        transform-origin: 0% 0%; /*transform: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY());*/
+        }
+    </style>
+</head>
+    <body>
+        
+        <div id="dv1"></div>
+
+        <br><br><br><br>
+    </body>
+</html>
