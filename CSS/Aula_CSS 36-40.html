@@ -1,0 +1,139 @@
+<!--Aula 36-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_CSS 36-40</title>
+    <style>
+    @keyframes cfb{
+        0% {left:0px;}
+        25% {left:500px;transform:rotate(360deg);}
+        100% {left:0px;}
+    }
+    
+    #dv0{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border: #000 solid 1px;
+        background-color: #00f;
+        animation-name: cfb;
+        animation: cfb 8s linear 4s infinite reverse;
+    }
+    </style>
+</head>
+<body>
+    
+    <div id="dv0"></div>
+
+    <br><br><br><br>
+</body>
+</html>
+
+
+
+<!--Aula 37-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_CSS 36-40</title>
+    <style>
+        #colunas{
+            width: 500px;
+            -webkit-colunns:100px 3; /**Chrome, Safari, Opera*/
+            columns: 100px 3; /*Padrão*/ 
+        }
+        .colunas{
+            -webkit-column-width: 100px;
+            -moz-column-width: 100px;
+            column-width: 100px;
+        }
+        .h1{
+            -webkit-column-span: all;
+            column-span: all;
+        }
+    </style>
+</head>
+<body>
+    
+    <div  class="colunas" id="colunas">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+
+    <br><br><br><br>
+</body>
+</html>
+
+
+
+<!--Aula 38-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_CSS 36-40</title>
+    <style>
+        .div1{
+            border: #000 solid 3px;
+            padding: 30px;
+            width: 300px;
+            resize: both;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="div1">Esta div pode ser redimensionada</div>
+
+    <br><br><br><br>
+</body>
+</html>
+
+
+
+<!--Aula 39-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_CSS 36-40</title>
+    <style>
+        .div2{
+            border: #000 solid 3px;
+            width: 200px;
+            height: 200px;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="div2">Matheus</div>
+
+    <br><br><br><br>
+</body>
+</html>
+
+
+
+<!--Aula 40-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula_CSS 36-40</title>
+    <style>
+        img{
+            width: 300px;
+        }
+        img:hover{
+            -webkit-filter: contrast(200%) opacity(50%);
+            filter: contrast(200%) opacity(50%);
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="C:\Users\User\Downloads\Logo cfbc.png">
+
+    <br><br><br><br>
+</body>
+</html>
