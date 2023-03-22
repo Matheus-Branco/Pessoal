@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_CSS 41-43</title>
+        <link rel="stylesheet" media="print()" href="impressora.css"> 
+        <link rel="stylesheet" media="screen and (max-width: 500px)" href="celular.css"> 
+        <link rel="stylesheet" media="screen and (min-width: 500px)" href="pc.css">
+        <link rel="stylesheet" media="screen and (min-width: 1024px)" href="telasGrandes.css">
+        <style>
+            .container{overflow: auto;}
+            #txtPrincipal{margin-left: 216px;}
+            #cxMenu{width: 200px; float: left;}
+            #menu{
+                margin: 0;
+                padding: 0;
+            }
+            .menuItem{
+                background: #55d;
+                color: #fff;
+                border: #ddd solid 1px;
+                border-radius: 4px;
+                list-style-type: none;
+                margin: 4px;
+                padding: 2px;
+            }
+            @media screen and (max-width: 500px){
+                #cxMenu{float: none; width: auto;}
+                #txtPrincipal{margin-left: 5px;}
+            }
+        </style>
+    </head>
+    <body>
+            
+        <div class="container">
+            <div id="cxMenu">
+                <ul id="menu">
+                    <li class="menuItem">Menu 1</li>
+                    <li class="menuItem">Menu 2</li>
+                    <li class="menuItem">Menu 3</li>
+                </ul>
+            </div>
+            <div id="txtPrincipal">
+                <h1>Matheus J. Branco</h1>
+                <p>Neste exemplo quando a tela for menor que 500 pixels, 
+                este texto que está ao lado do menu irá passar para baixo 
+                e o menu será redimensionado para ocupar o local onde o texto estava.</p>
+            </div>
+        </div>
+
+    <br><br><br><br>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_CSS 41-43</title>
+        <style>
+            .body{
+                color: #00f;
+            }
+            h1{
+                color: inherit;
+            }
+        </style>
+    </head>
+    <body class="body">
+            
+    <h1>Matheus J. Branco</h1>
+
+    <br><br><br><br>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_CSS 41-43</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+            
+    <!--em
+Unidade relativa ao tamanho do font-size anterior, aumenta ou diminui a fonte em relação a fonte-size, se elemento A tem font-size:15px e elemento B tem font-size:2em, então o tamanho do elemento B é igual a 30px. (15px X 2em = 30px) (5px X 4em = 20px) (2px X 1.5em = 3px)
+ex
+Unidade relativa à altura da letra x em font-size anterior.
+ch
+Unidade relatiza à largura do numeral zero do font-size anterior.
+rem
+Unidade relativa ao font-size do elemento raiz.
+vw
+Unidade relativa a 1% da largura da janela.
+vh
+Unidade relativa a 1% da altura da janela.
+vmin
+Unidade relativa a 1% da altura ou largura da janela, o que for menor.
+vmax
+Unidade relativa a 1% da altura ou largura da janela, o que for maior.
+%
+Porcentagem.
+cm
+Unidade absoluta relacionada a centímetros.
+mm
+Unidade absoluta relacionada a milímetros.
+in
+Unidade absoluta relacionada a polegadas. (1in = 96px = 2.54cm)
+px
+Unidade absoluta relacionada a pixels. (1px = 1/96th of 1in)
+pt
+Unidade absoluta relacionada a pontos. (1pt = 1/72 of 1in)
+pc
+Unidade absoluta relacionada a picas, pronuncia-se “paicas”. (1pc = 12pt)-->
+
+<!--Tabela geral dos parâmetros CSS CSS JavaScript Descrição *Os valores sublinhados são os padrões. *& indica que as propriedades anteriores se repetem após o valor indicado.
+align-content
+alignContent
+Alinhamento entre as linhas dentro de um container flexível quando os itens não usam todo o espaço disponível.
+Valores: stretch, center, flex-start, flex-end, space-between, space-around, initial, inherit.
+align-items
+alignItems
+Alinhamento para itens dentro de um container flexível.
+Valores: stretch, center, flex-start, flex-end, space-between, space-around, baseline, initial, inherit.
+align-self
+alignSelf
+Definir o alinhamento de um dos itens no interior de um elemento flexível para se ajustar ao container.
+Valores: auto, stretch, center, flex-start, flex-end, space-between, space-around, baseline, initial, inherit.
+animation
+animation
+Metapropriedade. Define todas as propriedades de animação a seguir, menos animationPlayState.
+animation-delay
+animationDelay
+Define quando a animação vai começar.
+Valores: time, initial, inherit. (padrão time com valor 0)
+animation-direction
+animationDirection
+Direção da animação.
+Valores: normal, reverse, alternate, alternate-reverse, initial, inherit
+animation-duration
+animationDuration
+Tempo de duração da animação em milissegundos.
+Valores: time, initial, inherit. (padrão time com valor 0)
+animation-fill-mode
+animationFillMode
+Quais valores serão aplicadas pela animação fora do período que ele está executando.
+Valores: none, forwards, backwards, both, initial, inherit
+animation-iteration-count
+animationIterationCount
+Número de vezes que uma animação deve ser executada.
+Valores: number, infinite, initial, inherit (padrão number com valor 1)
+animation-name
+animationName
+Nome da animação ou para os @keyframes da animação.
+Valores: none, keyframename, initial, inherit
+animation-timing-function
+animationTimingFunction
+Curva de velocidade da animação.
+Valores: linear, ease, ease-in, ease-out, cubic-bezier(n,n,n,n), initial, inherit
+animation-play-state
+animationPlayState
+Define se a animação está em execução ou em pausa.
+Valores: running, paused, initial, inherit
+azimuth
+azimuth
+Posicionamento espacial do áudio gerado pelo objeto.
+Valores: ângulo, left-side, far-left, left, center-left, center, center-right, right, far-right, right-side, [& behind], leftwards, rightwards, inherit
+background
+background
+Metapropriedade. Define backgroundColor, backgroundImage, backgroundRepeat, backgroundAttachment e backgroundPosition.
+background-attachment
+backgroundAttachment
+Indica se a imagem de fundo vai ser fixa ou vai rolar.
+Valores: scroll, fixed, inherit
+136
+background-color
+backgroundColor
+Cor de fundo.
+Valores: cor, transparente, inherit
+background-image
+backgroundImage
+Imagem de fundo.
+Valores: URL, none, inherit
+background-position
+backgroundPosition
+Cordenadas X e Y da imagem de fundo.
+Valores: porcentagem, tamanho (exemplo: x,y), top,center,botton, left, center, right, inherit
+background-repeat
+backgroundRepeat
+Configura a repetição da imagem de fundo.
+Valores: repeat, repeat-x, repeat-y, no-repeat, inherit
+background-clip
+backgroundClip
+Especifica a área de exibição da imagem de fundo.
+Valores: border-box, padding-box, content-box, initial, inherit
+background-origin
+backgroundOrigin
+Posicionamento de origem da imagem.
+Valores: padding-box, border-box, content-box, initial, inherit
+background-size
+backgroundSize
+Tamanho da imagem de fundo.
+Valores: auto, length, cover, contain, intial, inherit
+backface-visibility
+backfaceVisibility
+A propriedade backfaceVisibility define se ou não um elemento deve ser visível quando não está rotacionada de frente para a tela.
+Esta propriedade é útil quando um elemento é rodado, e você não quer ver a parte de trás.
+Valores: visible, hidden, initial, inherit
+border
+border
+Metapropriedade. Define todas as bordas ao mesmo tempo.
+border-bottom
+borderBottom
+Metapropriedade. Define as propriedades borderBottomWidth, borderBottomStyle e borderBottomColor.
+border-bottom-color
+borderBottomColor
+Cor da borda inferior.
+Valores: cor, inherit
+border-adius
+borderRadius
+Define o arredondamento de todas as bordas igualmente
+Valores: length|%, initial, inherit (valor padrão 0)
+border-bottom-left-radius
+borderBottomLeftRadius
+Arredonda a borda inferior esquerda
+Valores: 0 (% porcentagem), initial, inherit (padrão valor = 0)
+border-bottom-right-radius
+borderBottomRightRadius
+Arredonda a borda inferior direita
+Valores: 0 (% porcentagem), initial, inherit (padrão valor = 0)
+border-top-left-radius
+borderTopLeftRadius
+Arredonda a borda superior esquerda
+Valores: 0 (% porcentagem), initial, inherit (padrão valor = 0)
+border-top-right-radius
+borderTopRightRadius
+Arredonda a borda superior direita
+Valores: 0 (% porcentagem), initial, inherit (padrão valor = 0)
+border-bottom-style
+borderBottomStyle
+Estilo da borda inferior.
+Valores: none, hidden, dotted, dashed, solid, double, grove, ridge, inset, outset, inherit
+border-bottom-width
+borderBottomWidth
+Largura da borda inferior.
+Valores: thin, medium, thick, tamanho, inherit
+Borde-collapse
+borderCollapse
+Reduzir a borda da tabela
+Valores: separate, colapse, initial, inherit
+border-color
+borderColor
+Cores de todas as bordas.
+border-image
+borderImage
+Metapropriedade, especifica uma imagem como borda em torno de um elemento <div>
+Valores: source slice width outset repeat, initial, inherit
+border-image-outset
+borderImageOutset
+Configura a imagem de borda para fora ou para dentro das bordas originais da <div>
+Valores: length, number, initial, inherit (valor padrão 0), para ajustar internamente use valores menores que 1, por exemplo 0.1
+border-image-repeat
+borderImageRepeat
+Configura a repetição da imagem usada como borda.
+Valores: stretch, repeat, round, initial, inherit
+border-image-slice
+borderImageSlice
+Especifica o deslocamento/distância das imagens da borda em caso de repetição
+Valores: number|%|, fill, initial, inherit (valor padrão 100%)
+border-image-source
+borderImageSource
+Especifica qual imagem será usada como borda em torno de um elemento div:
+Valores: none, image, initial, inherit
+border-image-width
+borderImageWidth
+Largura da imagem de borda
+Valores: number|%, auto, initial, inherit (valor padrão 1)
+137
+border-left
+borderLeft
+Semelhante a borderBottom aplicado à borda esquerda.
+border-left-color
+borderLeftColor
+Semelhante a borderBottomColor aplicado à borda esquerda.
+border-left-style
+borderLeftStyle
+Semelhante a borderBottomStyle aplicado à borda esquerda.
+border-left-width
+borderLeftWidth
+Semelhante a borderBottomWidth aplicado à borda esquerda.
+border-right
+borderRight
+Semelhante a borderBottom aplicado à borda direita.
+border-right-color
+borderRightColor
+Semelhante a borderBottomColor aplicado à borda direita.
+border-right-style
+borderRightStyle
+Semelhante a borderBottomStyle aplicado à borda direita.
+border-right-width
+borderRightWidth
+Semelhante a borderBottomWidth aplicado à borda direita.
+border-spacing
+borderSpacing
+Espaçamento entre as bordas de duas células adjacentes, somente para tabelas.
+Valores: tamanho, inherit.
+border-style
+borderStyle
+Estilo de todas as bordas.
+Valores: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, inherit
+border-top
+borderTop
+Semelhante a borderBottom aplicado à borda esquerda.
+border-top-color
+borderTopColor
+Semelhante a borderBottom aplicado à borda esquerda.
+border-top-style
+borderTopStyle
+Semelhante a borderBottom aplicado à borda esquerda.
+border-top-width
+borderTopWidth
+Semelhante a borderBottom aplicado à borda esquerda.
+border-width
+borderWidth
+Largura de todas as bordas.
+Valores: thin, medium, thick, tamanho
+bottom
+bottom
+Distância entre a base de um objeto e a base do bloco onde está contido.
+Valores: tamanho, porcentagem, auto, inherit
+box-shadow
+boxShadow
+Adiciona sombra a um elemento div.
+Valores: none, h-shadow v-shadow blur spread color, inset, initial, inherit
+box-sizing
+boxSizing
+Permite definir certos elementos para caber dentro de em um outro elemento.
+Valores: content-box, border-box, initial, inherit
+caption-side
+captionSide
+Define ou retorna a posição do table caption.
+Valores: top, bottom, initial, inherit
+clear
+clear
+Com o valor configurado diferente de none, será posicionado abaixo dos elementos flutuantes que estiverem alinhados da maneira especificada aqui.
+Valores: none, left, right, both, inherit
+clip
+clip
+Área visível de um objeto.
+Valores: forma, auto, inherit.
+color
+color
+Cor do texto.
+Valores: cor, inherit
+column-count
+columnCount
+Especifica o número de colunas que um elemento pode conter
+Valores: number, auto, initial, inherit
+column-gap
+columnGap
+Especifica a lacuna, separação entre as colunas
+Valores: length, normal, initial, inherit
+column-rule
+columnRule
+Metapropriedade para definer todas as configurações de columnRule
+column-rule-color
+columnRuleColor
+Especifica a cor da barra divisória entre as colunas
+Valores: color, initial, inherit
+column-rule-style
+columnRuleStyle
+Define o estilo entre as colunas
+Valores: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, initial, inherit
+column-rule-width
+columnRuleWidth
+Largura da separação entre as colunas
+Valores: medium, thin, thick, length, initial, inherit
+columns
+columns
+Número de colunas
+Valores: auto, column-width column-count, initial, inherit
+138
+column-span
+columnSpan
+Especifica quantas colunas um elemento deve abranger
+Valores: 1, all, initial, inherit
+column-width
+columnWidth
+Largura da coluna
+Valores: auto, length, initial, inherit
+cursor
+cursor
+Estilo do ponteiro do Mouse.
+Valores: url, auto, crosshair, default, pointer, move, e-resize, ne-resize, nw-resize, n-resize, se-resize, sw-resize, s-resize, w-resize, text, wait, help, inherit.
+direction
+direction
+Direção do texto de um objeto e a ordem de construção das colunas de uma tabela.
+Valores: ltr, rtl, inherit
+display
+display
+Forma de visualização do objeto.
+Valores: inline, block, list-item, run-in, compact, marker, table, inline-table, table-row-group, table-header-group, table-footer-group, table-row, table-column-group, table-column, table-cell, table-caption, none, inherit.
+empty-cells
+emptyCells
+Em tabelas que usam conteúdos separador por células, configura se as células sem conteúdo terão bordas ou não.
+Valores: show, hide, inherit
+filter
+filter
+Aplica filtros de sombra, iluminação, etc
+Valores: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia()
+flex
+flex
+Configura todos os itens flexíveis com a mesma largura
+Valores: flex-grow flex-shrink flex-basis, auto, initial, inherit
+flex-basis
+flexBasis
+Configura a largura inicial de item flexível
+Valores: number, auto, initial, inherit
+flex-direction
+flexDirection
+Configura a direção de itens flexíveis
+Valores: row, row-reverse, column, column-reverse, initial, inherit
+flex-flow
+flexFlow
+Fluxo dos elementos flexíveis
+Valores: flex-direction, flex-wrap, initial, inherit
+flex-grow
+flexGrow
+Especifica quanto o item irá crescer em relação ao resto dos elementos flexíveis no interior do mesmo container
+Valores: number, initial, inherit
+flex-shrink
+flexShrink
+Especifica quanto o item irá diminuir em relação ao resto dos elementos flexíveis no interior do mesmo container
+Valores: number, initial, inherit
+flex-wrap
+flexWrap
+Especifica se os itens flexíveis deve envolver ou não
+Valores: nowrap, wrap, wrap-reverse, initial, inherit
+float
+cssFloat
+Especifica se o elemento vai flutuar a direita ou a esquerda
+Valores: left, right, none, initial, inherit
+font
+font
+Metapropriedade. Configura todas as propriedades da fonte.
+Valores: fontStyle | fontVariant | fontWeight | fontSize | lineHeight | fontFamily, caption, icon, menu, message-box, small-caption, status-bar, inherit
+font-family
+fontFamily
+Define uma ou mais famílias de fonte.
+Valores: |fonte1, fonte2|, inherit
+font-size
+fontSize
+Tamanho da fonte.
+Valores: tamanho, porcentagem, xx-small, x-small, small, medium, large, x-large, xx-large, larger, smaller, inherit.
+font-style
+fontStyle
+Estilo da fonte
+Valores: normal, italic, oblique, initial, inherit
+font-variant
+fontVariant
+Como as letras da fonte vão ser exibidas
+Valores: normal, small-caps, initial, inherit
+font-stretch
+fontStretch
+Largura dos caracteres da fonte, wider estica e narrower achata a fonte.
+Valores: normal, wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expandes, inherit.
+font-weight
+fontWeight
+Espessura da fonte.
+Valores: normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900, inherit
+font-stretch
+fontStretch
+Especifica como será o ajuste da fonte, se irá esticar ou encolher por exemplo
+Valores: normal, condensed, expanded
+height
+height
+Altura do objeto.
+Valores: tamanho, porcentagem, auto, inherit.
+139
+image-orientation
+imageOrientation
+Especifica a orientação/direção da imagem
+left
+left
+Semelhante à propriedade bottom, porém, aplicado à esquerda.
+Valores: tamanho, porcentagem, auto, inherit
+letter-spacing
+letterSpacing
+Distância entre os caracteres do texto.
+Valores: normal, tamanho, inherit
+line-height
+lineHeight
+Altura da linha.
+Valores: normal, fator, tamanho, porcentagem, inherit.
+list-style
+listStyle
+Metapropriedade. Define as propriedades listStyleType, listStylePosition e listStyleImage.
+list-style-image
+listStyleImage
+Imagem que será usada como marcador.
+Valores: url, none, inherit
+list-style-position
+listStylePosition
+Posição do marcador.
+Valores: inside, outside, inherit
+list-style-type
+listStyleType
+Tipo do marcador.
+Valores: disc, circle, square, decimal, decimal-leading-zero, lower-roman, upper-roman, lower-greek, llower-alpha, lower-latin, upper-aplha, upper-latin, hebrew, armenian, georgian, cjk-ideographic, hiragana, katakana, hiragana-iroha, katakana-iroha, none, inherit
+margin
+margin
+Largura das quatro margens.
+Valores: tamanho (exemplo: 1,2,3,4), inherit
+margin-bottom
+marginBottom
+Largura da margem inferior.
+Valores: tamanho, inherit
+margin-left
+marginLeft
+Largura da margem esquerda.
+Valores: tamanho, inherit
+margin-right
+marginRight
+Largura da margem direita.
+Valores: tamanho, inherit
+margin-top
+marginTop
+Largura da margem superior.
+Valores: tamanho, inherit
+max-geight
+maxHeight
+Altura máxima do elemento
+Valores: none, px, %, initial, inherit
+max-width
+maxWidth
+Largura máxima do elemento
+Valores: none, px, %, initial, inherit
+min-height
+minHeight
+Altura mínima do elemento
+Valores: none, px, %, initial, inherit
+min-width
+minWidth
+Largura mínima do elemento
+Valores: none, px, %, initial, inherit
+nav-down
+navDown
+Define ou retorna para onde navegar ao usar a tecla de navegação seta-para baixo
+nav-index
+navIndex
+Ordem de tabulação de um elemento
+nav-left
+navLeft
+Comportamento ao usar a tecla de navegação de seta-esquerda
+nav-right
+navRight
+Comportamento ao usar a tecla de navegação de seta-direita
+nav-up
+navUp
+Comportamento ao usar a tecla de navegação de seta-para cima
+opacity
+opacity
+Transparência do elemento <div>
+Valores: number, initial, inherit
+order
+order
+Ordem de itens flexíveis
+Valores: number, |initial, inherit
+orphans
+orphans
+Especifica o número mínimo de linhas que serão mostradas no final da página
+Valores: number, initial, inherit
+outline
+outline
+Metapropriedade. Define as propriedades de contorno, outlineColor, outlineStyle, outlineWidth, se difere da borda por não ocupar espaço e não precisa ser retangular.
+outline-color
+outlineColor
+Cor do contorno.
+Valores: cor, invert, inherit
+outline-style
+outlineStyle
+Estilo do contorno.
+140
+Valores: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, inherit
+outline-width
+outlineWitdh
+Largura do contorno.
+Valores: thin, medium, thick, largura, inherit.
+overflow
+overflow
+Define o comportamento visual do objeto caso ele extrapole a área definida pelo bloco pai.
+Valores: visible, hidden, scroll, auto, inherit
+overflow-x
+overflowX
+Define o comportamento visual do objeto caso ele extrapole a área definida pelo bloco pai pela horizontal
+Valores: visible, hidden, scroll, auto, initial, inherit
+overflow-y
+overflowY
+Define o comportamento visual do objeto caso ele extrapole a área definida pelo bloco pai pela vertical
+Valores: visible, hidden, scroll, auto, initial, inherit
+padding
+padding
+Todos os lados do espaçamento interno.
+Valores: tamanho (ex: 1,2,3,4), porcentagem (ex. 1,2,3,4), inherit
+padding-bottom
+paddingBottom
+Espaçamento interno inferior.
+Valores: tamanho, porcentagem, inherit.
+padding-left
+paddingLeft
+Espaçamento interno esquerdo.
+Valores: tamanho, porcentagem, inherit.
+padding-right
+paddingRight
+Espaçamento interno direito.
+Valores: tamanho, porcentagem, inherit.
+padding-top
+paddingTop
+Espaçamento interno superior.
+Valores: tamanho, porcentagem, inherit.
+page-break-after
+pageBreakAfter
+Define ou retorna o comportamento page-break depois de um elemento (para impressão ou visualização de impressão).
+Valores: auto, always, avoid, emptystring, left, right, initial, inherit
+page-break-before
+pageBreakBefore
+Define ou retorna o comportamento page-break antes de um elemento (para impressão ou visualização de impressão).
+Valores: auto, always, avoid, emptystring, left, right, initial, inherit
+page-break-inside
+pageBreakInside
+Define ou retorna o comportamento page-break dentro de um elemento (para impressão ou visualização de impressão).
+Valores: auto, avoid, initial, inherit
+perspective
+perspective
+Perspectiva de visualização do elemento
+Valores: length, none
+perspective-origin
+perspectiveOrigin
+Base 3D inicial da perspectiva
+Valores: x-axis y-axis, initial, inherit
+position
+position
+Posicionamento do objeto.
+Valores: static, relative, absolute, fixed, inherit
+quotes
+quotes
+Configura os elementos de marcação
+Valores: none, string string string string, initial, inherit
+resize
+resize
+Configura um element <div> como reimencionável
+Valores: none, both, horizontal, vertical, initial, inherit
+right
+right
+Semelhante à propriedade bottom, porém, aplicado à direita.
+Valores: tamanho, porcentagem, auto, inherit
+table-layout
+tableLayout
+Configura em fixo o tamanho das linhas e colunas da tabela
+Valores: automatic, fixed, initial, inherit
+tab-size
+tabSize
+Configura o espaçamento do elemento <pre>
+Valores: number, length, initial, inherit
+text-align
+textAlign
+Alinhamento do texto.
+Valores: left, right, center, justify, stringAlinhamento, inherit
+text-align-last
+textAlignLast
+Alinha a última linha do parágrafo
+Valores: auto, left, right, center, justify, start, end, initial, inherit
+text-decoration
+textDecoration
+Decoração do texto.
+Valores: none, underline, overline, line-through, blink, inherit
+text-justify
+textJustify
+Configura o alinhamento do texto em justificado.
+text-indent
+textIndent
+Indentação da primeira linha do texto.
+Valores: tamanho, porcentagem, inherit.
+141
+text-overflow
+textOverflow
+Configura o texto excedente ao container
+Valores: clip, ellipsis, string, initial, inherit
+text-shadow
+textShadow
+Lista de sombras aplicadas ao texto.
+Valores: none, {cor, [distanciaX & distanciaY & desfoque}, inherit
+text-transform
+textTransform
+Define o fluxo de caracteres maiúsculos e minúsculos do texto.
+Valores: capitalize, uppercase, lowercase, none, inherit
+top
+top
+Semelhante à propriedade bottom, porém, aplicado ao topo.
+Valores: tamanho, porcentagem, auto, inherit
+transform
+transform
+Aplica uma transformação como rotação e escala por exemplo a uma <div>
+Valores: none, transform-functions, initial, inherit
+transform-origin
+transformOrigin
+Ponto de origem, inicial para aplicar a transformação
+Valores: x-axis, y-axis, z-axis, initial, inherit
+transform-style
+transformStyle
+Define ou retorna como elementos aninhados são renderizados no espaço 3D.
+Valores: flat, preserve-3d, initial, inherit
+transition
+transition
+Define as configurações da transição.
+Valores: property duration timing-function delay, initial, inherit
+transition-property
+transitionProperty
+Propriedade de configuração da transição
+Valores: none, all|property, initial, inherit
+transition-duration
+transitionDuration
+Tempo de duração da transição
+Valores: time, initial, inherit
+transition-timing-function
+transitionTimingFunction
+Configura curva de velocidade da transição, velocidade do andamento
+Valores: ease linear, ease-in, ease-out, ease-in-out, cubic-bezier(),
+Initial, inherit
+transition-delay
+transitionDelay
+Tempo para iniciar a transição
+Valores: time, initial, inherit
+vertical-align
+verticalAlign
+Alinhamento vertical.
+Valores: baseline, sub, super, top, text-top, middle, bottom, text-bottom, porcentagem, tamanho, inherit.
+visibility
+visibility
+Visibilidade do objeto.
+Valores: visible, hidden, colapse, inherit
+word-break
+wordBreak
+Configura a regra de quebra de linha do texto
+Valores: normal, break-all, keep-all, initial, inherit
+word-wrap
+wordWrap
+Configura se uma palavra poderá ser quebrada para próxima linha
+Valores: normal, break-word, initial, inherit
+width
+width
+Largura do objeto.
+Valores: tamanho, porcentagem, auto, inherit
+word-spacing
+wordSpacing
+Diatância entre as palavras.
+Valores: normal, tamanho, inherit
+z-index
+zIndex
+Profundidade do objeto, empilhamento, camadas.
+Valores: auto, profundidade, inherit-->
+
+<!--Tabela de compatibilidade, CSS x Browser Propriedade IE Firefox Chrome Safari Opera
+align-content
+11
+28
+21
+9
+12.1
+align-items
+11
+20
+21
+9
+12.1
+align-self
+11
+20
+21
+9
+12.1
+@keyframes
+10
+16
+43
+9
+30
+animation
+10
+16
+43
+9
+30
+animation-name
+10
+16
+43
+9
+30
+animation-duration
+10
+16
+43
+9
+30
+animation-timing-function
+10
+16
+43
+9
+30
+142
+animation-delay
+10
+16
+43
+9
+30
+animation-iteration-count
+10
+16
+43
+9
+30
+animation-direction
+10
+16
+43
+9
+30
+animation-play-state
+10
+16
+43
+9
+30
+backface-visibility
+10
+16
+36
+9
+23
+background-clip
+9
+4
+4
+3
+10.5
+background-origin
+9
+4
+4
+3
+10.5
+background-size
+9
+4
+4
+4.1
+10
+border-bottom-left-radius
+9
+4
+5
+5
+10.5
+border-bottom-right-radius
+9
+4
+5
+5
+10.5
+border-image
+11
+15
+16
+6
+15
+border-image-outset
+11
+15
+15
+6
+15
+border-image-repeat
+11
+15
+15
+6
+15
+border-image-slice
+11
+15
+15
+6
+15
+border-image-source
+11
+15
+15
+6
+15
+border-image-width
+11
+13
+15
+6
+15
+border-radius
+9
+4
+5
+5
+10.5
+border-top-left-radius
+9
+4
+5
+5
+10.5
+border-top-right-radius
+9
+4
+5
+5
+10.5
+box-decoration-break
+box-shadow
+9
+4
+10
+5.1
+10.5
+box-sizing
+8
+29
+10
+5.1
+9.5
+break-after
+10
+11.1
+break-before
+10
+11.1
+break-inside
+column-count
+10
+2
+4
+3
+15
+column-fill
+13
+column-gap
+10
+2
+4
+3
+15
+column-rule
+10
+2
+4
+3
+15
+column-rule-color
+10
+2
+4
+3
+15
+column-rule-style
+10
+2
+4
+3
+15
+column-rule-width
+10
+2
+4
+15
+column-span
+10
+4
+15
+column-width
+10
+2
+4
+3
+15
+columns
+10
+9
+4
+3
+15
+filter
+35
+18
+6
+15
+fit
+flex
+11
+28
+29
+9
+17
+flex-basis
+11
+28
+29
+9
+17
+flex-direction
+11
+28
+29
+9
+17
+flex-flow
+11
+28
+29
+9
+17
+flex-grow
+11
+28
+29
+9
+17
+flex-shrink
+11
+28
+29
+9
+17
+flex-wrap
+11
+28
+29
+9
+17
+@font-face
+9
+3.6
+4
+3
+10
+@font-feature-values
+font-feature-settings
+10
+34
+16
+25
+font-kerning
+143
+font-language-override
+font-size-adjust
+3
+font-stretch
+font-synthesis
+font-variant
+font-variant-alternates
+font-variant-caps
+font-variant-east-asian
+font-variant-ligatures
+font-variant-numeric
+font-variant-position
+hanging-punctuation
+hyphens
+10
+6
+13
+5.1
+image-orientation
+26
+image-rendering
+11.6
+image-resolution
+justify-content
+11
+28
+29
+9
+17
+line-break
+mark
+mark-after
+mark-before
+marks
+marquee-direction
+marquee-play-count
+marquee-speed
+marquee-style
+nav-down
+11.5
+nav-index
+11.5
+nav-left
+11.5
+nav-right
+11.5
+nav-up
+11.5
+object-fit
+object-position
+opacity
+9
+2
+4
+3.1
+9
+order
+11
+28
+29
+9
+17
+outline-offset
+3.5
+4
+3
+10.5
+overflow-wrap
+9
+3.5
+3
+9.5
+overflow-x
+9
+3.5
+4
+3
+9.5
+overflow-y
+9
+4
+3
+9.5
+@page
+8
+19
+5
+6
+perspective
+10
+16
+36
+9
+23
+perspective-origin
+10
+16
+36
+9
+23
+resize
+5
+4
+4
+15
+rest
+rest-after
+rest-before
+ruby-align
+tab-size
+4
+21
+6.1
+15
+144
+text-align-last
+5.5
+12
+35
+text-combine-upright
+text-decoration-color
+6
+text-decoration-line
+6
+text-decoration-style
+6
+text-justify
+5.5
+text-orientation
+text-overflow
+6
+7
+4
+3.1
+11
+text-shadow
+10
+3.5
+4
+4
+9.6
+text-underline-position
+transform
+10
+16
+36
+9
+23
+transform-origin
+10
+16
+36
+9
+23
+transform-style
+11
+16
+36
+9
+23
+transition
+10
+16
+26
+6.1
+12.1
+transition-delay
+10
+16
+26
+6.1
+12.1
+transition-duration
+10
+16
+26
+6.1
+12.1
+transition-property
+10
+16
+26
+6.1
+12.1
+transition-timing-function
+10
+16
+26
+6.1
+12.1
+word-break
+5.5
+15
+4
+3.1
+15
+word-wrap
+5.5
+3.5
+4
+3.1
+10.5
+writing-mode-->
+
+    <br><br><br><br>
+    </body>
+</html>
