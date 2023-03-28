@@ -1,0 +1,139 @@
+<!--Aula 16-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_Javascript 16-20</title>
+    </head>
+    <body>
+        <script>
+            var mochila=new Array();
+
+            mochila[0]="corda";
+            mochila[1]="faca";
+            mochila[2]="arame";
+            mochila[3]="lanterna";
+            mochila[4]="pedra";
+
+            mochila.aplice(2,1);
+            mochila.sort();
+            document.write("Qtde itens mochila: " + mochila.length + "<br>")
+
+            for (let mochila = 0; mochila < 4; index++) {
+                document.write(mochila);
+            }
+
+
+            var carros = [
+                {id: 1, modelo: 'Corsa', marca: 'Chevrolet', preco: 45.000, createdAt: 1534506085621},
+                {id: 2, modelo: 'Punto', marca: 'Fiat', preco: 120.000, createdAt: 1534506085621}
+            ]
+            var total = 0
+            for(var i = 0; i < carros.length; i++){
+                total += carros[i].preco
+            }
+            for(const carro of carros){
+                total += carro.preco
+            }
+            for(const i in carros){
+                total += carro[i].preco
+            }
+        </script>
+        
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 17-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_Javascript 16-20</title>
+    </head>
+    <body>
+        <script>
+            
+        </script>
+        
+            <!--aula de Do while-->
+
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 18-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_Javascript 16-20</title>
+    </head>
+    <body>
+        <script>
+            
+        </script>
+        
+        <!--while vs do while-->
+
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 19-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_Javascript 16-20</title>
+    </head>
+    <body>
+        <script>
+        for(let i = 0; i < 10; i++){
+            if (i== 3) {break; }
+            text += "The number is " + i + "<br>";
+        }
+        for(let i = 0; i < 10; i++){
+            if (i== 3) {continue; }
+            text += "The number is " + i + "<br>";
+        }    
+        </script>
+        
+
+
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 20-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_Javascript 16-20</title>
+    </head>
+    <body>
+        <script>
+            function soma2_10(){
+                let n1=2
+                let n2=10
+                let soma=n1+n2
+                console.log(soma)
+            }
+            for(let i=0;i<10;i++){
+                soma2_10()
+            }
+            function mudarTexto(){
+                let d1=document.getElementById("d1")
+                let d2=document.getElementById("d2")
+                let d3=document.getElementById("d3")
+                d1.innerHTML="CFB Cursos"
+                d2.innerHTML="CFB Cursos"
+                d3.innerHTML="CFB Cursos"
+            }
+        </script>
+        
+        <div id="d1">Matheus</div>
+        <div id="d2">CFBC</div>
+        <div id="d3">Javascript</div>
+
+        <button onclick="mudarTexto">Mudar Texto</button>
+
+        <br><br><br><br>
+    </body>
+</html>
