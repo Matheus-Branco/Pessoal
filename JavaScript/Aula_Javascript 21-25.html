@@ -1,0 +1,132 @@
+<!--Aula 21-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_Javascript 21-25</title>
+    </head>
+    <body>
+        <script>
+            function canal(){
+                let n1=10
+                let n2=2
+                let res=n1*n2
+                if(res%2 == 0)
+                    return "Par"
+                else
+                    return "Ímpar"
+                return "CFB Cursos"
+            }
+
+            let res=canal()
+            console.log(res)
+        </script>
+
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 22-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_Javascript 21-25</title>
+    </head>
+    <body>
+        <script>
+            const valor_padrão=0
+
+            function add(v){
+                valor+=v
+            }
+
+            let valor=0
+            console.log(valor)
+
+            add(10)
+            console.log(valor)
+
+            add(5)
+            console.log(valor)
+
+            function soma(n1=valor_padrão,n2=valor_padrão){
+                let res
+                res=n1+n2
+                return res
+            }
+
+            let resultado_soma=soma(5,5)
+            console.log(resultado_soma)
+        </script>
+        
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 23-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_Javascript 21-25</title>
+    </head>
+    <body>
+        <script>
+            function soma(...valores){
+                let tem=valores.length
+                let res=0
+                for(let v of valores){
+                    res+=v
+                }
+                return res
+            }
+
+            console.log(soma(10,12,20,4))
+        </script>
+        
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 24-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_Javascript 21-25</title>
+    </head>
+    <body>
+        <script>
+            let f=new Function ("v1","v2","v3", "return v1+v2+v3") //Função construção anônima
+    
+            console.log(f(10,5,7))
+        </script>
+        
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 25-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_Javascript 21-25</title>
+    </head>
+    <body>
+        <script>
+            //const soma=function(v1,v2){return v1+v2}
+
+            const soma=(v1,v2)=>{
+                let res=v1+v2
+                return res
+            }
+            console.log(soma(10,5))
+
+            const nome=n=>n
+            console.log(nome("Matheus"))
+
+            const add=n=>n+10
+            console.log(add(10))
+
+        </script>
+
+        <br><br><br><br>
+    </body>
+</html>
