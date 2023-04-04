@@ -1,0 +1,361 @@
+<!--Aula 31-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_Javascript 31-35</title>
+    </head>
+    <body>
+        <script>
+            const dc1=document.getElementById("c1")
+            const dc2=document.getElementById("c2")
+            const dc3=document.getElementById("c3")
+            const dc4=document.getElementById("c4")
+            const dc5=document.getElementById("c5")
+
+            const arrayElementos=[dc1,dc2,dc3,dc4,dc5]
+
+            let colecaoHTML=[...document.getElementsByTagName("div")]
+            colecaoHTML=[...colecaoHTML]
+            
+            console.log(colecaoHTML)
+
+        </script>
+
+        <div id="c1">HTML</div>
+        <div id="c2">CSS</div>
+        <div id="c3">Javascript</div>
+        <div id="c4">PHP</div>
+        <div id="c5">React</div>
+
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 32-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_Javascript 31-35</title>
+        <style>
+            .curso{
+                display: flex;
+                justify-content: center;
+                width: 200px;
+                border: 4px solid #888;
+                border-radius: 10px;
+                padding: 10px;
+                margin: 5px 0px;
+                cursor: pointer;
+            }
+            .curso:hover{
+                border-color: #00f;
+            }
+            .c1{
+                background-color: #ccc;
+                color: #444;
+            }
+            .c2{
+                background-color: #444;
+                color: #ccc;
+            }
+            .destaque{
+                background-color: #800 !important;
+                color: #fcc !important;
+                border-color: #f00 !important;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            const cursosTodos=[...document.getElementsByClassName("curso")]
+            const cursosC1=[...document.getElementsByClassName("c1")]
+            const cursosC2=[...document.getElementsByClassName("c2")]
+            const cursoEspecial=document.getElementsByClassName("curso")[0]
+
+            console.log(cursosTodos)
+            console.log(cursosC1)
+            console.log(cursosC2)
+
+            cursosTodos.map((el)=>{
+                el.classList.add("destaque")
+            })
+        </script>
+
+        <div id="c1" class="curso c1">HTML</div>
+        <div id="c2" class="curso c1">CSS</div>
+        <div id="c3" class="curso c1">Javascript</div>
+        <div id="c4" class="curso c1">PHP</div>
+        <div id="c5" class="curso c1">React</div>
+        <div id="c6" class="curso c1">MySQL</div>
+        <div id="c7" class="curso c2">C++</div>
+        <div id="c8" class="curso c2">C#</div>
+        <div id="c9" class="curso c2">Arduino</div>
+        <div id="c10" class="curso c2">React Native</div>
+        <div id="c11" class="curso c2">Python</div>
+        <div id="c12" class="curso c2">Raspberry</div>
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 33-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_Javascript 31-35</title>
+        <style>
+            .curso{
+                display: flex;
+                justify-content: center;
+                width: 200px;
+                border: 4px solid #888;
+                border-radius: 10px;
+                padding: 5px;
+                margin: 5px 0px;
+                cursor: pointer;
+            }
+            .curso:hover{
+                border-color: #00f;
+            }
+            .c1{
+                background-color: #ccc;
+                color: #444;
+            }
+            .c2{
+                background-color: #444;
+                color: #ccc;
+            }
+            .destaque{
+                background-color: #800 !important;
+                color: #fcc !important;
+                border-color: #f00 !important;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            const divTodas=[...document.getElementsByClassName("div")]
+            const cursoTodos=[...document.getElementsByClassName("curso")]
+            const cursosc1=[...document.getElementsByClassName("c1")]
+            const cursosc2=[...document.getElementsByClassName("c2")]
+            const cursosEspeciais=[...document.getElementsByClassName("c1")]
+
+            //const query_divTodas=[...document.querySelectorAll("div[class]")]
+            const query_divTodas=[...document.querySelectorAll("div > p")]
+            const query_cursoTodos=[...document.querySelectorAll(".curso")]
+            const query_cursosc1=[...document.querySelectorAll(".c1,p")]
+            const query_cursosc2=[...document.querySelectorAll(".c2")]
+            const query_cursosEspeciais=document.querySelectorAll("#c1")[0]
+
+            console.log(query_divTodas)
+            console.log(query_cursosc2)
+
+            // console.log(divTodas)
+            // console.log(cursosTodos)
+            // console.log(cursosc1)
+            // console.log(cursosc2)
+            // console.log(cursosEspeciais)
+
+            // cursosTodos.map((el)=>{
+            //     el.classList.add("destaque")
+            // })
+        </script>
+
+        <div id="c1" class="curso c1"><p>HTML</p></div>
+        <div id="c2" class="curso c1"><p>CSS</p></div>
+        <div id="c3" class="curso c1"><p>Javascript</p></div>
+        <div id="c4" class="curso c1">PHP</div>
+        <div id="c5" class="curso c1">React</div>
+        <div id="c6" class="curso c1">MySQL</div>
+        <div id="c7" class="curso c2">C++</div>
+        <div id="c8" class="curso c2">C#</div>
+        <div id="c9" class="curso c2">Arduino</div>
+        <div id="c10" class="curso c2">React Native</div>
+        <div id="c11" class="curso c2">Python</div>
+        <div id="c12" class="curso c2">Raspberry</div>
+        <p id="c13">Photoshop</p>
+        <p id="c14">AppInventor</p>
+
+    </body>
+</html>
+
+<!--Aula 34-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_Javascript 31-35</title>
+        <style>
+            .curso{
+                display: flex;
+                justify-content: center;
+                width: 200px;
+                border: 4px solid #888;
+                border-radius: 10px;
+                padding: 5px;
+                margin: 5px 0px;
+                cursor: pointer;
+            }
+            .curso:hover{
+                border-color: #00f;
+            }
+            .c1{
+                background-color: #ccc;
+                color: #444;
+            }
+            .c2{
+                background-color: #444;
+                color: #ccc;
+            }
+            .destaque{
+                background-color: #800 !important;
+                color: #fcc !important;
+                border-color: #f00 !important;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            //const c1=document.querySelector("#c1")
+            const cursos=[...document.querySelectorAll("curso")]
+
+            cursos.map((el)=>{
+                el.addEventListener("click",(evt)=>{
+                    const el=evt.target
+                    el.classList.add("destaque")
+                    console.log(el.innerHTML + "foi clicado")
+                })
+            })
+
+            // c1.addEventListener("click",(evt)=>{
+            //     const el=evt.target
+            //     el.classList.add("destaque")
+            // })
+
+        </script>
+
+        <div id="c1" class="curso c1">HTML</div>
+        <div id="c2" class="curso c1"><p>CSS</p></div>
+        <div id="c3" class="curso c1"><p>Javascript</p></div>
+        <div id="c4" class="curso c1">PHP</div>
+        <div id="c5" class="curso c1">React</div>
+        <div id="c6" class="curso c1">MySQL</div>
+        <div id="c7" class="curso c2">C++</div>
+        <div id="c8" class="curso c2">C#</div>
+        <div id="c9" class="curso c2">Arduino</div>
+        <div id="c10" class="curso c2">React Native</div>
+        <div id="c11" class="curso c2">Python</div>
+        <div id="c12" class="curso c2">Raspberry</div>
+
+        <br><br><br><br>
+    </body>
+</html>
+
+<!--Aula 35-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula_Javascript 31-35</title>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+                border: none;
+            }
+            main{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            button{
+                width: 150px;
+                height: 40px;
+                background-color: #025;
+                color: #fff;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+            .curso{
+                display: flex;
+                justify-content: center;
+                width: 200px;
+                border: 4px solid #888;
+                border-radius: 10px;
+                padding: 10px;
+                margin: 5px 0px;
+                cursor: pointer;
+            }
+            .selecionado{
+                background-color: #800 !important;
+                color: #fcc !important;
+                border-color: #f00 !important;
+            }
+            .c1{
+                background-color: #ccc;
+                color: #444;
+            }
+            .c2{
+                background-color: #444;
+                color: #ccc;
+            }
+            .caixa{
+                border: 4px solid #000;
+                background-color: #eee;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 5px;
+                height: 500px;
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+
+            const caixa1=document.querySelector("#caixa1")
+            const caixa2=document.querySelector("#caixa2")
+            const btn=document.querySelector("#btn_copiar")
+            const todosCursos=[...document.querySelectorAll(".curso")]
+
+            todosCursos.map((el)=>{
+                el.addEventListener("click",(evt)=>{
+                    const curso=evt.target
+                    curso.classList.toggle("selecionado")
+                })
+            })
+
+            btn.addEventListener("click",(evt)=>{
+                const cursosSelecionados=[...document.querySelectorAll(".selecionado")]
+                cursosSelecionados.map((el)=>{
+                    caixa2.appendChild(el)
+                })
+            })
+
+            btn.addEventListener("click",(evt)=>{
+                const cursosSelecionados=[...document.querySelectorAll(".selecionado")]
+                cursosSelecionados.map((el)=>{
+                    caixa1.appendChild(el)
+                })
+            })
+
+        </script>
+        
+        <main>
+            <div id="caixa1" class="caixa">
+                <div id="c1" class="curso c1">HTML</div>
+                <div id="c1" class="curso c1">CSS</div>
+                <div id="c1" class="curso c1">Javascript</div>
+                <div id="c1" class="curso c1">PHP</div>
+                <div id="c1" class="curso c1">React</div>
+                <div id="c1" class="curso c1">MySQL</div>
+            </div>
+            <button id=""btn_copiar>Copiar -></button>
+            <div id="caixa2" class="caixa">
+
+            </div>
+        </main>
+
+    </body>
+</html>
