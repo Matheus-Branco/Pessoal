@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex_Loop03</title>
+</head>
+<body>
+    <a href="https://www.javascriptprogressivo.net/2018/12/Lista-Exercicios-Lacos-Loopings-WHILE-FOR.html">Link dos exercícios</a>
+    <script>
+        var p_A = window.prompt("Qual a população do país A?")
+        var p_B = window.prompt("Qual a população do país B?")
+        var ano = 0
+        var PorcentagemA = window.prompt("Qual o percentual de crescimento da população do país A?")
+        var PorcentagemB = window.prompt("Qual o percentual de crescimento da população do país B?")
+        var aumentoA = p_A * PorcentagemA
+        var aumentoB = p_B * PorcentagemB
+        do{
+            p_A2 = p_A + aumentoA
+            p_B2 = p_B + aumentoB
+            ano++
+        } while(p_B2>=p_A2)
+        window.alert(`Para a população A passar da população B precisaria de ${ano} anos.`)
+    </script>
+</body>
+</html>

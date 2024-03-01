@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula8CV</title>
+    <style>
+        #area{
+            font: 20pt arial;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>    
+    <div id="area">
+        Intereaja
+    </div>
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar(){
+            a.InnerText = 'clicou'
+            a.style.background = 'red'
+        }
+        function entrar(){
+            a.InnerText = 'entrou'
+        }
+        function saiu(){
+            a.InnerText = 'saiu'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+</html>

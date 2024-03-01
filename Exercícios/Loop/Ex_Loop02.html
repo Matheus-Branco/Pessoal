@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex_Loop02</title>
+</head>
+<body>
+    <a href="https://www.javascriptprogressivo.net/2018/12/Lista-Exercicios-Lacos-Loopings-WHILE-FOR.html">Link dos exercícios</a>
+    <script>
+        var nome = window.prompt("Digite seu nome:")
+        while(nome.length <= 2){
+            window.prompt("Digite novamente o seu nome:")
+        }
+        var idade = window.prompt("Digite sua idade:")
+        while(idade >= 0 && idade <=150){
+            window.prompt("Digite novamente a sua idade:")
+        }
+        var salario = window.prompt("Digite seu salário:")
+        while(salario > 0){
+            window.prompt("Digite novamente o seu salário:")
+        }
+        var sexo = window.prompt("Digite seu sexo entre 'f' ou 'm':")
+        if (sexo != 'f' || sexo != 'm'){
+            window.prompt("Digite seu sexo 'f' ou 'm' novamente:")
+        }
+        var est_civil = window.prompt("Digite seu estado civíl entre 's','v','c' ou 'd':")
+        if (est_civil != 's' || est_civil != 'c' || est_civil != 'v' || est_civil != 'd'){
+            window.prompt("Digite seu estado civil entre 's','v','c' ou 'd' novamente:")
+        }
+    </script>
+</body>
+</html>

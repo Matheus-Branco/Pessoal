@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex_Loop03</title>
+</head>
+<body>
+    <a href="https://www.javascriptprogressivo.net/2018/12/Lista-Exercicios-Lacos-Loopings-WHILE-FOR.html">Link dos exercícios</a>
+    <script>
+        var p_A = 80000
+        var p_B = 200000
+        var ano = 0
+        
+        do{
+            p_A = p_A*1.03
+            p_B = p_B*1.015
+            ano++
+        } while(p_B>=p_A)
+        window.alert(`Para a população A passar da população B precisaria de ${ano} anos.`)
+    </script>
+</body>
+</html>
